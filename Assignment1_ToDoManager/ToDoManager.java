@@ -20,7 +20,7 @@ class ToDoManager {
         manager.repeatCheck(tasks);
     }
     
-    //Enter 5 user's tasks
+    //Enter 5 tasks
     public String[] tasksInput(String[] string){
         System.out.println("\nPlease enter your 5 tasks seperated by comma:");
         String s = scanner.nextLine();
