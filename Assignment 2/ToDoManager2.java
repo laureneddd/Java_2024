@@ -180,12 +180,22 @@ class ToDoManager {
         String target = scanner.nextLine();
         int index = 0;
         String[] afterDelTasks = Arrays.copyOf(originalTasks, originalTasks.length - 1);
+        boolean targetFound = true;
         
         for(int i = 0; i < originalTasks.length; i++){
             if(!originalTasks[i].equals(target)){
                 afterDelTasks[index++] = originalTasks[i];
+                
+            }
+            else{
+                targetFound = false;
             }
         } 
+        
+        while(targetFound){
+            System.out.println("Sorry, we didn't find your input. Please try again: ");
+            return originalTasks;
+        }
         return afterDelTasks;
     }
     
@@ -193,15 +203,15 @@ class ToDoManager {
     public void search(String[] originalTasks){
         System.out.println("\nPlease enter the task you wanna search: ");
         String target = scanner.nextLine();
-        boolean targetExist = true;
+        boolean targetNotExist = true;
 
         for(int i = 0; i < originalTasks.length; i++){
             if(originalTasks[i].equals(target)){
                 System.out.println("\nThe task " + "'" + originalTasks[i] + "'" + " is No." + i+1 + " task today.");
-                targetExist = false;
+                targetNotExist = false;
             }
         }
-        if(targetExist){
+        if(targetNotExist){
             System.out.println("\nSorry, there is no task that meet your criteria.");
         }
     }
