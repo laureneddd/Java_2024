@@ -11,6 +11,7 @@ class ToDoManager {
         String[] tasks = new String[taskNum];
         
         tasks = manager.tasksInput(tasks, taskNum);
+        
         while(true){
             System.out.println("\nMenu: 'Add' 'Update' 'Delete' 'Search' 'Display' 'Order' 'Duplicates' 'Type '0' to Exit'");
             String menuCommand = scanner.nextLine();
@@ -39,14 +40,6 @@ class ToDoManager {
             else if(menuCommand.equals("0")){
                 manager.exit();
                 break;
-            }
-            else{
-                System.out.println("\nPlease type '0' to exit.");
-                int exit = scanner.nextInt();
-                if(exit == 0){
-                    System.out.println("\nBye! Enjoy your day!");
-                    break;
-                }
             }
         }
     }
