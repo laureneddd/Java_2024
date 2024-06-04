@@ -6,14 +6,14 @@ public class UserDAO {
 
     public User[] add(String first, String last, String username, String password) {
         if (size >= users.length) {
-            users = Arrays.copyOf(users, users.length + 1); // Double the size of the array if it's full
+            users = Arrays.copyOf(users, users.length + 1); 
         }
         users[size] = new User();
         users[size].setFirstName(first);
         users[size].setLastName(username);
         users[size].setUserName(username);
         users[size].setPassWord(password);
-        size++; // Increment the size
+        size++; 
         return users;
     }
 
