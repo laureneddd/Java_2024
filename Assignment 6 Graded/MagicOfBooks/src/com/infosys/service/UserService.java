@@ -86,7 +86,7 @@ public class UserService {
         Book[] newBooks = userDao.addNew(user, bookid);
         for(int i = 0; i < newBooks.length; i++){
             if(newBooks[i] != null){
-                System.out.println(newBooks[i].toString());
+                System.out.println(newBooks[i]);
             }
         }
 
@@ -106,7 +106,7 @@ public class UserService {
         Book[] newBooks = userDao.addFavourite(user, bookid);
         for(int i = 0; i < newBooks.length; i++){
             if(newBooks[i] != null){
-                System.out.println(newBooks[i].toString());
+                System.out.println(newBooks[i]);
             }
         }
         System.out.println("Book marked as favourite.");
@@ -124,7 +124,7 @@ public class UserService {
         Book[] newBooks = userDao.addCompleted(user, bookid);
         for(int i = 0; i < newBooks.length; i++){
             if(newBooks[i] != null){
-                System.out.println(newBooks[i].toString());
+                System.out.println(newBooks[i]);
             }
         }
         System.out.println("Book marked as favourite.");
@@ -140,7 +140,7 @@ public class UserService {
         Book[] newBooks = user.getNewBooksArray();
         for(int i = 0; i < user.getNewBooksArray().length; i++){
             if(newBooks[i] != null){
-                System.out.println(newBooks[i].toString());
+                System.out.println(newBooks[i]);
             }
         }
     } 
