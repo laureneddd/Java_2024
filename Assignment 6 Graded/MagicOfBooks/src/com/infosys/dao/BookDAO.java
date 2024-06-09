@@ -14,13 +14,6 @@ public class BookDAO {
                 break;
             }
         }
-        System.out.println("array after adding a book");
-        for(int i = 0; i < books.length; i++) {
-            if(books[i] != null){
-                System.out.print(books[i].toString());
-            }
-        }
-        return true;
     }
 
     //delete a book by book id
