@@ -14,6 +14,7 @@ public class BookDAO {
                 break;
             }
         }
+        return true;
     }
 
     //delete a book by book id
