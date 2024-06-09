@@ -78,7 +78,7 @@ public class BookService {
             System.out.println("\nYour all books:");
             for(Book book: books){
                 if(book != null){
-                    System.out.println(book.toString());
+                    System.out.println(book);
                 }
             }
         }
