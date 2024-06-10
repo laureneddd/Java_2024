@@ -9,15 +9,11 @@ public class UserDAO {
     // BookDAO bookDao = new BookDAO();
 
     BookDAO bookDao;
-    
-    public UserDAO(BookDAO bookDao) {
-        this.bookDao = bookDao;
-    }
-    public UserDAO(){
-    }
+
     public void setBookDao(BookDAO bookDao) {
         this.bookDao = bookDao;
     }
+    
     // add a new user
     public void add(User newUser) {
         for(int i = 0; i < users.length; i++){
