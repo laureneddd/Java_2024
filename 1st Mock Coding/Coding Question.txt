@@ -1,0 +1,4 @@
+Given a string ‘S’, find the length of the Longest Palindromic Subsequence in it.
+The Longest Palindromic Subsequence (LPS) is the problem of finding a maximum-length subsequence of a given string that is also a Palindrome.Input: S = “BBABCBCAB”
+Output: 7
+Explanation: As “BABCBAB” is the longest palindromic subsequence in it. “BBBBB” and “BBCBB” are also palindromic subsequences of the given sequence, but not the longest ones.
