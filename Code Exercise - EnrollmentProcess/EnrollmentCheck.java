@@ -62,7 +62,7 @@ class EnrollmentCheck {
             while (scan.hasNextLine()) {
                 String content = scan.nextLine().trim();
                 if (content.isEmpty()) continue; 
-                // Separate content into user id, first name, last name, version, and company
+
                 String[] contentSplit = content.split(",");
                 if (contentSplit.length < 5) continue;
 
