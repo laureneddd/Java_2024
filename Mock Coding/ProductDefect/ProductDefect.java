@@ -1,6 +1,6 @@
 
 /*
- * Return the side length of the largest square submatrix in a two-dimensional matrix
+ * Return the size of the largest square submatrix in a two-dimensional matrix
  * Complete the method: largestArea:
  *         parameter: a two-dimensional array of Integers
  *         return: an integer that represents the size of the largest square sub-matrix 
