@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Playlist {
     private String name;
-    private List<Object> contents; // 可以包含 Song 或 Podcast
+    private List<Object> contents; 
 
     public Playlist(String name) {
         this.name = name;
