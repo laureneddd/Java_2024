@@ -22,6 +22,5 @@ public class Course {
     private String courseId;
     private double rating;
     
-    @OneToMany(mappedBy = "courseId", cascade = CascadeType.ALL)
     private List<String> comments;
 }
