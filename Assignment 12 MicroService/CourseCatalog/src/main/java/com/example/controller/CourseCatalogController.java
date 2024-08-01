@@ -47,6 +47,14 @@ public class CourseCatalogController {
         return rating;
         
     }
+
+    @GetMapping("/getComments/{courseId}")
+    public List<String> getCommentsByCourseId(@PathVariable String courseId) { 
+         
+        List<String> comments = restTemplate.getForObject("http://CourseRating/getComments/" + courseId, List.class);
+         
+        return comments;
+    }
     
     
     
